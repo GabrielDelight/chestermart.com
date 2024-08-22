@@ -1,0 +1,40 @@
+.main {
+   display: flex;
+   height: 100%;
+   min-height: 100vh;
+}
+
+
+.main aside {
+   flex-basis: 20%;
+   padding: 10px;
+   margin: 10px;
+}
+
+.main article {
+   flex-basis: 80%;
+   padding: 10px;
+   margin: 10px;
+}
+
+@media (max-width:600px) {
+      .main {
+         flex-direction: column;
+      }
+
+      .main aside {
+   display: none;
+      }
+      
+      .main article {
+         flex-basis: 100%;
+      }
+}
+
+
+.product_wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+}

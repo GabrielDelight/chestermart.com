@@ -1,0 +1,40 @@
+.container {
+    background: url("https://images.pexels.com/photos/1793525/pexels-photo-1793525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat;
+    background-size: cover;
+    height: 64vh;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .container {
+        height: 82vh;
+    }
+}
+
+.container h1 {
+    font-size: 30vh;
+}
+
+.container h3 {
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .container h1 {
+       font-size: 5rem
+    }
+}
+
+.container  button {
+    background: rgb(131, 58, 180);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 2rem;
+}

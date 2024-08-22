@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all ease .2s;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+
+@font-face {
+  font-family: 'HelveticaBold';
+  src: url('../public/Helvetica/Helvetica-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color: #f7fafc !important;
+  transition: all ease .5s;
+  scroll-behavior: smooth;
+  /* color: white; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 1300px) {
+  body {
+     max-width: 1300px;
+     margin: 0 auto;
+  }
+}
+
+
+.table_wrapper {
+  width: 100%;
+  max-width: 900px;
+  overflow: auto;
+}
+
+tbody tr:nth-child(odd){
+  background-color: rgb(55, 55, 55);
+  color: white;
+  border: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: unset;
+}
+
+i {
+  cursor: pointer;
+  color: #8b8488;
+}
+
+svg {
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer !important;
+  outline: none;
+  border: none;
+  background-color: unset;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 20px;
+  background-color: rgb(135, 135, 135);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: unset;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(227, 227, 227);
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar-thumb {
+    visibility: hidden;
+  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 99, 99, 0.4);
+} 
+
+
+/* Prevent the app from zooming on mobile devices */
+:root {
+  touch-action: pan-x pan-y;
+  height: 100%
+}
+
+/* preventing IOS mobile from zooming */
+@media screen and (max-width: 767px) {
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input {
+    font-size: 16px !important;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+  }
+}
+
+
+textarea {
+  font-size: 16px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+
+
+.wrapper-class {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.editor-class {
+  background-color:rgb(0, 0, 0);
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.toolbar-class {
+  border: 1px solid #ccc;
+}
+
+.rdw-dropdown-selectedtext span, .rdw-dropdownoption-default {
+  color: black !important;
+}
+
+.send_email_btn {
+  padding: 10px 20px;
+  background-color: #ca4bd3;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+.section {
+  padding: 30px;
+}
+
+
+
+.short_tr {
+  width: 70px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 600px){
+  .short_tr {
+    width: 100%;
+  }
+}

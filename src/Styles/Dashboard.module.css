@@ -1,0 +1,11 @@
+.wrapper_ {
+   display: flex;
+   justify-content: space-between;
+   margin: 2rem  0rem;
+   flex-wrap: wrap;
+}
+
+
+.wrapper_ div {
+   margin-bottom: 10px;
+}

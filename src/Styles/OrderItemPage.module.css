@@ -1,0 +1,61 @@
+
+
+.main {
+   display: flex;
+      /* max-width: 90%; */
+   /* margin: auto; */
+}
+
+.main .article {
+   flex-basis: 60%;
+   /* padding: 10px;
+   margin: 10px; */
+}
+
+.main .aside {
+   flex-basis: 40%;
+   /* padding: 10px;
+   margin: 10px; */
+}
+
+
+
+.main .aside  button {
+   width: 100%;
+   padding: 10px;
+   background-color: black;
+   color: white;
+   font-size: 17px;
+   margin-top: 20px;
+}
+
+.title {
+   font-size: 30px;
+}
+
+.cart_sub_title {
+   font-size: 13px;
+   width: 80%;
+   padding: 20px 0px;
+   border-bottom: 1px solid gray;
+}
+
+.article a {
+   text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+   .main {
+      flex-direction: column;
+   }
+   
+   .main .article {
+      width: 100%;
+   }
+   
+
+.cart_sub_title {
+   width: 100%;
+}
+ 
+}

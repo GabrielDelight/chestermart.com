@@ -1,0 +1,6 @@
+.main ul li {
+   color: white !important;
+   line-height-step: none;
+   margin: 30px 20px;
+   width: 180px;
+}

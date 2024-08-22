@@ -1,0 +1,140 @@
+
+.main {
+   display: flex;
+   /* width: 90%; */
+   margin: auto;
+}
+
+.main article {
+   flex-basis: 50%;
+   padding: 10px;
+   margin: 10px;
+}
+
+.main aside {
+   flex-basis: 50%;
+   padding: 10px;
+   margin: 10px;
+}
+
+
+
+
+@media (max-width: 700px){
+   .main {
+      flex-direction: column;
+      width: 100%;
+   }
+   
+   .main article {
+     flex-basis: 100%;
+   }
+   
+   .main aside {
+      flex-basis: 100%;
+    
+   }
+   .break_div  {
+      display: none;
+   }
+
+
+   
+}
+
+
+.xx_text {
+   font-size: 50px;
+}
+
+
+.caution {
+   padding: 30px 0px;
+   border-bottom: 1px solid #bbb;
+   margin-bottom: 2rem;
+}
+
+.caution a {
+   text-decoration: underline !important;
+}
+
+.caution  {
+   line-height: 1.5;
+}
+
+.form_title {
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+
+
+.form_row {
+   display: flex;
+   align-items: center;
+}
+
+.form input {
+   width: 100%;
+   padding: 10px;
+   background-color: rgb(238, 238, 238);
+   border: none;
+   outline: none;
+}
+
+.form button {
+   width: 100%;
+   padding: 15px;
+   background-color: rgb(0, 0, 0);
+   border: none;
+   outline: none;
+   color: rgb(255, 255, 255);
+   margin: auto;
+   display: block;
+}
+
+.form_row div {
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+.form_row div:nth-child(odd) {
+   margin-right: 40px;
+}
+
+.form_list {
+   margin-bottom: 20px;
+}
+
+.form label {
+   font-weight: bold;
+   font-size: 12px;
+}
+
+.methods_wrapper {
+   display: flex;
+   width: 80%;
+   padding: 20px 0px;
+   padding-bottom: 40px;
+   border-bottom: 1px solid black;
+}
+
+.methods_wrapper svg {
+   margin-right: 10px;
+}
+
+
+.methods_wrapper p {
+   font-size: 14px;
+   line-height: 1.7;
+}
+
+.method_main {
+   margin-bottom: 40px;
+}
+
+.error {
+   color: red !important;
+   font-weight: bold;
+   margin-top: 10px;
+   font-size: 12px;
+}
