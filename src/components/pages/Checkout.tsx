@@ -105,9 +105,15 @@ function Checkout() {
           <p className={classes.xx_text}>Checkout</p>
           <div className={classes.caution}>
             <p>
-              To pruchase product (s) must fill in the datat first
-              <br />
-              Please fill them correctly.
+            To purchase products, you need to fill in the information first.
+            
+            <br />
+             Please ensure it is completed accurately.
+
+
+
+
+
             </p>
           </div>
 

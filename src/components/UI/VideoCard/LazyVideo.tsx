@@ -6,18 +6,19 @@ interface LazyVideoProps {
 }
 
 const LazyVideo: React.FC<LazyVideoProps> = ({ src, ...props }) => {
+  const mediaQueryList = window.matchMedia('(max-width: 700px)');
   return (
     <>
       <LazyLoad>
-        {/* <video muted autoPlay width="100%" {...props} loop> */}
-        <video  width="100%" {...props} loop>
+        <video muted autoPlay controls={mediaQueryList.matches? true: false} width="100%" {...props} loop>
+        {/* <video  width="100%" {...props} loop> */}
           <source src={src} type="video/mp4" />
           <track
-                    kind="subtitles"
-                    src="/captions.vtt"
-                    srcLang="en"
-                    label="English"
-                />
+            kind="subtitles"
+            src="/captions.vtt"
+            srcLang="en"
+            label="English"
+          />
           Your browser does not support the video tag.
         </video>
       </LazyLoad>

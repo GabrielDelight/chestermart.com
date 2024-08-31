@@ -14,7 +14,6 @@
    position: relative;
    border-radius: 20px;
    overflow: hidden;
-
 }
 
 .list video {
@@ -47,6 +46,8 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   /* background-color: red; */
+   display: none;
 
 }
 

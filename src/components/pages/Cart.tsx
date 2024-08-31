@@ -47,8 +47,9 @@ function Cart() {
           <div>
             <p className={classes.title}>My Cart</p>
             <p className={classes.cart_sub_title}>
-              You have amzing items in yout cart, you can simple inclreade the
-              wauntity or you cart and the balance will be topped as well
+              You have great items in your cart. You can easily increase the
+              quantity of the items in your cart, and the balance will be
+              updated accordingly.
             </p>
           </div>
           <br />
@@ -58,9 +59,7 @@ function Cart() {
             })}
           </div>
 
-
-
-{carts.length < 1 && <NotFound /> }
+          {carts.length < 1 && <NotFound />}
         </article>
 
         <aside>
@@ -72,7 +71,7 @@ function Cart() {
             </Link>
           ) : (
             <>
-            <br />
+              <br />
               <p>
                 You need to log in to proceed to checkout. Please log in to
                 continue.
